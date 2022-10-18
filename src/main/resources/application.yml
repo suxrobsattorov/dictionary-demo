@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/dictionary"
+    username: "JavaDbUser"
+    password: "root"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  error:
+    include-message: always
+  port: 8081
+
+
+    # ===============================
+    #              LOG
+    # ===============================
+#logging:
+#  level:
+#    dic:
+#      uz: INFO
+#  file:
+#    path: "logs"
+#    name: "logs/myLogFile.log"
+#  logback:
+#    rolling policy:
+#      file-name-pattern: "dictionary-%d{yyyy-MM-dd}.%i.log"
+#      max-file-size: 20MB
